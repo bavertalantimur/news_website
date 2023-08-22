@@ -1,3 +1,6 @@
+
+
+
 body{
     
     display: grid;
@@ -13,7 +16,12 @@ body{
 }
 #header{
     grid-area: header;
-    
+    background:url(HaberSitesiSon/images/logo.png) no-repeat 10vw center;
+    background-size: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 #content{
     grid-area: content;
@@ -37,6 +45,8 @@ div{
     grid-template-columns:repeat(3,1fr);
     grid-template-rows: 3fr 5fr 3fr;
     grid-gap: 1rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 .copyRightBox{
     grid-column: 1/ span 4;
@@ -52,4 +62,42 @@ div{
 .article > div {
     border: none;
     background-color: pink;
+}
+#header > a {
+    color: gray;
+    margin: 0.5rem;
+    
+}
+
+
+#header > ul{
+    list-style: none;
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+}
+
+#header > ul li{
+    margin: 0.25rem;
+
+}
+#header > ul li a{
+    text-decoration: none;
+    background: gray;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0.5rem;
+  
+
+font-family: 'Permanent Marker', cursive;
+
+
+}
+#header > ul a.home_page{
+    background-color: red;
+}
+#header ul a:hover{
+    color: black;
 }
