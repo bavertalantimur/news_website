@@ -5,7 +5,7 @@ body{
      "header"
     "content"
     "footer";
-    height: 1500px;
+    height: 2000px;
     grid-template-rows: 100px 1fr 300px;
     
             
@@ -30,14 +30,26 @@ body{
 div{
     background-color: lightgray;
     border: thin solid black;
-    grid-template-rows: 3fr 1fr ;
+    
 }
 .article{
     display: grid;
     grid-template-columns:repeat(3,1fr);
     grid-template-rows: 3fr 5fr 3fr;
+    grid-gap: 1rem;
 }
 .copyRightBox{
     grid-column: 1/ span 4;
     text-align: center;
+}
+.article > div:nth-child(1){
+    grid-column: 1 /span 2;
+}
+.article > div:last-child{
+    grid-column-start: 4 ;
+    grid-column-end: 2;
+}
+.article > div {
+    border: none;
+    background-color: pink;
 }
